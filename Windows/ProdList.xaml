@@ -23,7 +23,7 @@
         <ListView x:Name="LvProductList" 
                   Grid.Row="2" 
                   d:ItemsSource="{d:SampleData ItemCount=7}"
-                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
 
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
