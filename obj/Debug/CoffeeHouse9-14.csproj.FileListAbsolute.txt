@@ -21,7 +21,6 @@ C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\HistroyPage.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\Manager\AddClientPage.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\Manager\SalePage.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\PersonalOfficePage.g.cs
-C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\ProdListPage.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AuthorizationWindow.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\RegistrationWindow.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\Client\PurchasePage.baml
@@ -31,7 +30,6 @@ C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\HistroyPage.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\Manager\AddClientPage.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\Manager\SalePage.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\PersonalOfficePage.baml
-C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Pages\ProdListPage.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AuthorizationWindow.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\RegistrationWindow.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\bin\Debug\EntityFramework.dll
@@ -43,3 +41,5 @@ C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\CoffeeHouse9-14_Content.g
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\CoffeeHouse9-14.csproj.CopyComplete
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditProductWindow.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditProductWindow.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ProdList.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ProdList.baml

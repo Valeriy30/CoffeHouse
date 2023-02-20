@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CoffeeHouse9_14.Pages
+namespace CoffeeHouse9_14.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для ProdListPage.xaml
+    /// Логика взаимодействия для ProdList.xaml
     /// </summary>
-    public partial class ProdListPage : Page
+    public partial class ProdList : Window
     {
-        public ProdListPage()
+        public ProdList()
         {
             InitializeComponent();
         }
