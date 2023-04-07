@@ -45,8 +45,7 @@
                                 <Image.Source>
                                     <Binding Path="Photo">
                                         <Binding.TargetNullValue>
-                                            <ImageSource>c:\users\imac10\source\repos\coffeehouse9-14\res\заглушка.jfif
-</ImageSource>
+                                            <ImageSource>c:\users\imac10\source\repos\coffeehouse9-14\res\заглушка.jfif</ImageSource>
                                         </Binding.TargetNullValue>
                                     </Binding>
                                 </Image.Source>

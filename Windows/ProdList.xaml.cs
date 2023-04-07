@@ -37,5 +37,10 @@ namespace CoffeeHouse9_14.Windows
 
             LvProductList.ItemsSource = ProdList;
         }
+
+        private void btnAdd_Click()
+        {
+
+        }
     }
 }

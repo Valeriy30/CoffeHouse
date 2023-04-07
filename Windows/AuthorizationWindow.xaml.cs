@@ -41,10 +41,11 @@ namespace CoffeeHouse9_14.Windows
             var authUser = context.Account.ToList()
                 .Where(i => i.Login== tbLogin.Text && i.Password== pbPass.Password)
                 .FirstOrDefault();
+            
             if (authUser != null)
             {
-               MainWindow main=new MainWindow();
-                
+                ClassHelper.EmployeeDataContext.employee = authUser.Employee.FirstOrDefault();
+                MainWindow main=new MainWindow();
                 main.Show();
 
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse9_14.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static CoffeeHouse9_14.ClassHelper.EFClass;
 
 namespace CoffeeHouse9_14
 {
@@ -23,6 +25,8 @@ namespace CoffeeHouse9_14
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show(EmployeeDataContext.employee.Account.FirstName.ToString());
+            tbFI.Text=EmployeeDataContext.employee.Account.FirstName.ToString()+" "+ EmployeeDataContext.employee.Account.LastName.ToString() + " \\ " + EmployeeDataContext.employee.Post.Title.ToString();
         }
     }
 }
