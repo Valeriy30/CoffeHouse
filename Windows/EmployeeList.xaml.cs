@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static CoffeeHouse9_14.ClassHelper.EFClass;
 
-namespace CoffeeHouse9_14.Pages
+namespace CoffeeHouse9_14.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для HistroyPage.xaml
+    /// Логика взаимодействия для EmployeeList.xaml
     /// </summary>
-    public partial class HistroyPage : Page
+    public partial class EmployeeList : Window
     {
-        public HistroyPage()
+        public EmployeeList()
         {
             InitializeComponent();
+            dgEmployee.ItemsSource = context.Account.ToList().Where(i => i.Id%2==0);
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

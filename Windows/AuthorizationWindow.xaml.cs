@@ -32,9 +32,7 @@ namespace CoffeeHouse9_14.Windows
             RegistrationWindow reg = new RegistrationWindow();
             this.Close();
             reg.Show();
-            
-            
-        }
+         }
 
         private void btnAuth_Click(object sender, RoutedEventArgs e)
         {
@@ -44,10 +42,10 @@ namespace CoffeeHouse9_14.Windows
             
             if (authUser != null)
             {
-                ClassHelper.EmployeeDataContext.employee = authUser.Employee.FirstOrDefault();
+                EmployeeDataContext.employee = authUser.Employee.FirstOrDefault();
                 MainWindow main=new MainWindow();
                 main.Show();
-
+                this.Close();
             }
             else
             {

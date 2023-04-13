@@ -159,7 +159,7 @@
     <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Cost" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
     <Property Name="IdCategory" Type="Int32" Nullable="false" />
-    <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
     <NavigationProperty Name="Category" Relationship="KonX2CoffeeHauseModel.FK_Product_Category" FromRole="Product" ToRole="Category" />
     <NavigationProperty Name="ProductSale" Relationship="KonX2CoffeeHauseModel.FK_ProductSale_Product" FromRole="Product" ToRole="ProductSale" />
   </EntityType>

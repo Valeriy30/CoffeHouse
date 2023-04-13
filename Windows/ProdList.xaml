@@ -14,7 +14,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-
+       
         <TextBlock Text="Список товаров"
                    HorizontalAlignment="Center"
                    FontSize="30"
@@ -66,5 +66,12 @@
             </ListView.ItemTemplate>
 
         </ListView>
+        <Button x:Name="btnAdd"
+                Content="+"
+                FontSize="35"
+                Grid.Row="3"
+                Height="50"
+                Width="70"
+                HorizontalAlignment="Right" Click="btnAdd_Click"></Button>
     </Grid>
 </Window>

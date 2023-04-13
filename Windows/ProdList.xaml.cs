@@ -28,19 +28,23 @@ namespace CoffeeHouse9_14.Windows
         {
             InitializeComponent();
             GetProduct();
+            if (EmployeeDataContext.employee.Post.Id!=1)
+            {
+                btnAdd.Visibility= Visibility.Hidden;
+            }
+            
         }
         private void GetProduct()
         {
             List<Product> ProdList = new List<Product>();
-
             ProdList = context.Product.ToList();
-
             LvProductList.ItemsSource = ProdList;
         }
 
-        private void btnAdd_Click()
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            AddEditProductWindow addEditProductWindow = new AddEditProductWindow();
+            addEditProductWindow.ShowDialog();
         }
     }
 }
