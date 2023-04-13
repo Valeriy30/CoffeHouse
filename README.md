@@ -34,3 +34,12 @@
 <b1> Вывод товаров </b>
 
 <img width="874" alt="image" src="https://user-images.githubusercontent.com/125443382/220190727-19677c5e-66bd-4603-91c3-349d21cb5f1c.png">
+
+<b1> Вход по ролям </b>
+![image](https://user-images.githubusercontent.com/116799841/231675671-a7ee5d16-6546-4d0b-8058-dad90a420096.png)
+![image](https://user-images.githubusercontent.com/116799841/231678641-908f79e8-c975-4cfb-83f5-34f321bc0a2e.png)
+![image](https://user-images.githubusercontent.com/116799841/231678790-661d423b-04ba-48b1-b20c-10f17af7b3bd.png)
+![image](https://user-images.githubusercontent.com/116799841/231678909-aef0e57a-9366-4d72-a71c-ae989db0ea60.png)
+
+
+
