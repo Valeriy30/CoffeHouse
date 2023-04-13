@@ -41,5 +41,9 @@
 ![image](https://user-images.githubusercontent.com/116799841/231678790-661d423b-04ba-48b1-b20c-10f17af7b3bd.png)
 ![image](https://user-images.githubusercontent.com/116799841/231678909-aef0e57a-9366-4d72-a71c-ae989db0ea60.png)
 
+<b1> Добавление и изменение сотрудника </b>
+![image](https://user-images.githubusercontent.com/116799841/231772113-15b9e65c-e062-4cb4-be9d-2217bbed6081.png)
+![image](https://user-images.githubusercontent.com/116799841/231772253-a5cfcbbf-2c00-410d-9176-d06675147d78.png)
+
 
 
