@@ -10,6 +10,5 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model1.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model1.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/%d0%97%d0%b0%d0%b3%d0%bb%d1%83%d1%88%d0%ba%d0%b0.jfif")]
 
 

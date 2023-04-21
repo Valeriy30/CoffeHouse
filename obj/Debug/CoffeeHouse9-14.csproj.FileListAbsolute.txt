@@ -33,3 +33,11 @@ C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AccountList.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\EmployeeList.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AccountList.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\EmployeeList.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditEmployeeWindow.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ClientWindow.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditEmployeeWindow.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ClientWindow.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditClientWindow.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditClientWindow.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\CartWindow.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\CartWindow.baml

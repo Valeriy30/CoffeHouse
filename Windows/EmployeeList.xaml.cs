@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse9_14.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +24,27 @@ namespace CoffeeHouse9_14.Windows
         public EmployeeList()
         {
             InitializeComponent();
-            dgEmployee.ItemsSource = context.Account.ToList().Where(i => i.Id%2==0);
+          
+            dgEmployee.ItemsSource = context.Employee.ToList();
+           
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+            AddEditEmployeeWindow addEditEmployee = new AddEditEmployeeWindow();
+            this.Hide();
+            addEditEmployee.Show();
+        }
 
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            context.SaveChanges();
+            MessageBox.Show("Изменено");
+        }
+
+        private void dgEmployee_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TextBlock tbCH = dgEmployee.Columns[0].GetCellContent(dgEmployee.Items[dgEmployee.SelectedIndex]) as TextBlock;
         }
     }
 }

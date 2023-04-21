@@ -16,6 +16,7 @@ using CoffeeHouse9_14.ClassHelper;
 using static CoffeeHouse9_14.ClassHelper.EFClass;
 using CoffeeHouse9_14.Windows;
 using CoffeeHouse9_14.DB;
+using static CoffeeHouse9_14.ClassHelper.CartClass;
 
 namespace CoffeeHouse9_14.Windows
 {
@@ -24,6 +25,7 @@ namespace CoffeeHouse9_14.Windows
     /// </summary>
     public partial class ProdList : Window
     {
+        var selectedProduct = ;
         public ProdList()
         {
             InitializeComponent();
@@ -45,6 +47,44 @@ namespace CoffeeHouse9_14.Windows
         {
             AddEditProductWindow addEditProductWindow = new AddEditProductWindow();
             addEditProductWindow.ShowDialog();
+        }
+
+        private void BtnGoToCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            cartWindow.Show();
+        }
+
+        private void BtnAddToCart_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+            var selectedProduct = button.DataContext as DB.Product;
+
+
+
+            if (selectedProduct != null)
+            {
+                ClassHelper.CartClass.Stuffs.Add(selectedProduct);
+            }
+        }
+        private void CounterPrduct()
+        {
+
+            foreach (object val in Stuffs.Distinct())
+            {
+
+            }
+            for (int i = 0; i < Stuffs.Count; i++)
+            {
+                if (Stuffs[i] == selectedProduct)
+                {
+                    //LvCartProductList.
+                }
+            }
         }
     }
 }
