@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec962b14f93c43a08d24546366b270ae" Name="Diagram1">
+      <Diagram DiagramId="ec962b14f93c43a08d24546366b270ae" Name="Diagram1" ZoomLevel="94">
         <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Account" Width="1.5" PointX="0.75" PointY="3.375" />
         <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Category" Width="1.5" PointX="3" PointY="7.5" />
-        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Client" Width="1.5" PointX="3" PointY="3.75" />
-        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Employee" Width="1.5" PointX="3" PointY="0.75" />
-        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.GIftCard" Width="1.5" PointX="0.75" PointY="10" />
-        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Post" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Client" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Employee" Width="1.5" PointX="3" PointY="3.75" />
+        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.GIftCard" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Post" Width="1.5" PointX="0.75" PointY="10" />
         <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Product" Width="1.5" PointX="5.25" PointY="7.125" />
         <EntityTypeShape EntityType="KonX2CoffeeHauseModel.ProductSale" Width="1.5" PointX="7.5" PointY="2.25" />
         <EntityTypeShape EntityType="KonX2CoffeeHauseModel.Sale" Width="1.5" PointX="5.25" PointY="2.125" />

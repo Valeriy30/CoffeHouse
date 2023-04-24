@@ -68,7 +68,7 @@
     <Property Name="IdProductSale" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IdSale" Type="int" Nullable="false" />
     <Property Name="IdProduct" Type="int" Nullable="false" />
-    <Property Name="Quantity" Type="nchar" MaxLength="10" />
+    <Property Name="Quantity" Type="int" />
   </EntityType>
   <EntityType Name="Sale">
     <Key>

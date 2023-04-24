@@ -60,7 +60,7 @@
                                    Width="200"
                                    Stretch="Fill">
                                 <Image.Source>
-                                    <Binding Path="Photo">
+                                    <Binding Path="Image">
                                         <Binding.TargetNullValue>
                                             <ImageSource>/Res/zag.png</ImageSource>
                                         </Binding.TargetNullValue>
@@ -73,7 +73,7 @@
                                        Margin="10 0 0 0"
                                        TextWrapping="Wrap"/>
 
-                            <TextBlock Text="{Binding Price}"
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>

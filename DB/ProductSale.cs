@@ -17,7 +17,7 @@ namespace CoffeeHouse9_14.DB
         public int IdProductSale { get; set; }
         public int IdSale { get; set; }
         public int IdProduct { get; set; }
-        public string Quantity { get; set; }
+        public Nullable<int> Quantity { get; set; }
     
         public virtual Product Product { get; set; }
         public virtual Sale Sale { get; set; }

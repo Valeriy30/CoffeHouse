@@ -56,16 +56,26 @@
                                        Margin="10 0 0 0"
                                        TextWrapping="Wrap"/>
 
-                            <TextBlock Text="{Binding Price}"
+                            <TextBlock Text="{Binding Cost}"
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
                             <TextBlock x:Name="tbCount" 
-                                Text="Кол-во:"
+                                       Text="{Binding Quantity}"
                                        FontSize="14"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
-
+                            <WrapPanel Margin="10">
+                            <Button x:Name="BtnAddToCart"
+                                    Width="40"
+                                    Height="40"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    HorizontalAlignment="Right"
+                                    Margin="0 0 20 0"
+                                    Click="BtnAddToCart_Click"  >
+                                <Image Source="/Res/Add.png"/>
+                            </Button>
                             <Button x:Name="BtnRemoveToCart"
                                     Width="40"
                                     Height="40"
@@ -73,14 +83,29 @@
                                     BorderThickness="0"
                                     HorizontalAlignment="Right"
                                     Margin="0 0 20 0"
-                                    Click="BtnRemoveToCart_Click">
+                                    Click="BtnRemoveToCart_Click ">
                                 <Image Source="/Res/Delete.png"/>
                             </Button>
+                            </WrapPanel>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
+        <Button
+            x:Name="btnPokupka_Click"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Stretch"
+            Grid.Row="3"
+            Height="50"
+            Width="200"
+            Content="Оплатить"
+            FontSize="30" 
+            Click="Pokupka_Click"
+            
+            >
+            
+        </Button>
     </Grid>
 </Window>

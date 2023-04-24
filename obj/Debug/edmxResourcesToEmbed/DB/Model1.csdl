@@ -170,7 +170,7 @@
     <Property Name="IdProductSale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="IdSale" Type="Int32" Nullable="false" />
     <Property Name="IdProduct" Type="Int32" Nullable="false" />
-    <Property Name="Quantity" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Quantity" Type="Int32" />
     <NavigationProperty Name="Product" Relationship="KonX2CoffeeHauseModel.FK_ProductSale_Product" FromRole="ProductSale" ToRole="Product" />
     <NavigationProperty Name="Sale" Relationship="KonX2CoffeeHauseModel.FK_ProductSale_Sale" FromRole="ProductSale" ToRole="Sale" />
   </EntityType>

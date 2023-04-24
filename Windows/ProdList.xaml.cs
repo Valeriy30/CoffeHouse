@@ -18,6 +18,8 @@ using CoffeeHouse9_14.Windows;
 using CoffeeHouse9_14.DB;
 using static CoffeeHouse9_14.ClassHelper.CartClass;
 
+
+
 namespace CoffeeHouse9_14.Windows
 {
     /// <summary>
@@ -25,7 +27,7 @@ namespace CoffeeHouse9_14.Windows
     /// </summary>
     public partial class ProdList : Window
     {
-        var selectedProduct = ;
+        public object selProduct;
         public ProdList()
         {
             InitializeComponent();
@@ -57,34 +59,35 @@ namespace CoffeeHouse9_14.Windows
 
         private void BtnAddToCart_Click(object sender, RoutedEventArgs e)
         {
+            bool a = true;
             Button button = sender as Button;
             if (button == null)
             {
                 return;
             }
             var selectedProduct = button.DataContext as DB.Product;
-
+            selProduct = selectedProduct;
 
 
             if (selectedProduct != null)
             {
-                ClassHelper.CartClass.Stuffs.Add(selectedProduct);
-            }
-        }
-        private void CounterPrduct()
-        {
-
-            foreach (object val in Stuffs.Distinct())
-            {
-
-            }
-            for (int i = 0; i < Stuffs.Count; i++)
-            {
-                if (Stuffs[i] == selectedProduct)
+                for (int i = 0; i < Stuffs.Count; i++)
                 {
-                    //LvCartProductList.
+                    if (Stuffs[i] == selectedProduct)
+                    {
+                        Stuffs[i].Quantity++;
+                        a = false;
+                    }
                 }
+                if (a)
+                {
+                    selectedProduct.Quantity = 1;
+                    Stuffs.Add(selectedProduct);
+                }
+
+
             }
         }
+       
     }
 }
