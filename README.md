@@ -45,5 +45,14 @@
 ![image](https://user-images.githubusercontent.com/116799841/231772113-15b9e65c-e062-4cb4-be9d-2217bbed6081.png)
 ![image](https://user-images.githubusercontent.com/116799841/231772253-a5cfcbbf-2c00-410d-9176-d06675147d78.png)
 
+<b1> Оформление заказа </b>
+![image](https://user-images.githubusercontent.com/116799841/234770944-1102a73b-4d35-40dd-83c3-287dc64dc63c.png)
+![image](https://user-images.githubusercontent.com/116799841/234771110-48d260d4-22fa-481e-8c75-dba2b748e8dc.png)
+![image](https://user-images.githubusercontent.com/116799841/234771187-0fa4b873-a09d-4b2a-81ee-075628a229be.png)
+![image](https://user-images.githubusercontent.com/116799841/234771260-d34ee715-40fa-4685-8fbf-616b8493de80.png)
+![image](https://user-images.githubusercontent.com/116799841/234771326-c923f397-684a-4e1f-bf7b-72f839a84dd3.png)
+![image](https://user-images.githubusercontent.com/116799841/234771393-0455ca9e-a109-4da2-a427-c58d5d3927dd.png)
+
+
 
 
