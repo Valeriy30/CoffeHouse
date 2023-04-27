@@ -60,11 +60,19 @@
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
+                            <WrapPanel>
+                                <TextBlock Text="Кол-во"
+                                 HorizontalAlignment="Center"
+                                           FontSize="15"
+                                           Margin="10 0 0 0"
+                                           FontWeight="Bold"
+                                 />
                             <TextBlock x:Name="tbCount" 
                                        Text="{Binding Quantity}"
                                        FontSize="14"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
+                            </WrapPanel>
                             <WrapPanel Margin="10">
                             <Button x:Name="BtnAddToCart"
                                     Width="40"

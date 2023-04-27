@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static CoffeeHouse9_14.ClassHelper.EFClass;
 
 namespace CoffeeHouse9_14.Windows
 {
@@ -23,33 +22,13 @@ namespace CoffeeHouse9_14.Windows
         public ReportWindow()
         {
             InitializeComponent();
-            dgSale.ItemsSource = context.ProductSale.ToList();
-            
         }
 
-        private void dpSecond_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        private void btnReport_Click(object sender, RoutedEventArgs e)
         {
-            if (dpFirst.SelectedDate.Value != null)
-            {
-                dgSale.ItemsSource = context.ProductSale.ToList().Where(i => i.Sale.Date > dpFirst.SelectedDate.Value && i.Sale.Date < dpSecond.SelectedDate.Value);
-            }
-            else
-            {
-                dgSale.ItemsSource = context.ProductSale.ToList().Where(i => i.Sale.Date > dpSecond.SelectedDate.Value);
-            }
-        }
+            ReportSaleWindow reportSaleWindow = new ReportSaleWindow();
+            reportSaleWindow.ShowDialog();
 
-        private void dpFirst_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (dpSecond.SelectedDate == null)
-            {
-                dgSale.ItemsSource = context.ProductSale.ToList().Where(i => i.Sale.Date > dpFirst.SelectedDate.Value);
-            }
-            else
-            {
-                  dgSale.ItemsSource = context.ProductSale.ToList().Where(i => i.Sale.Date > dpFirst.SelectedDate.Value&& i.Sale.Date < dpSecond.SelectedDate.Value);
-
-            }
         }
     }
 }

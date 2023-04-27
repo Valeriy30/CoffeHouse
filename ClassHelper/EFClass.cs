@@ -10,6 +10,7 @@ namespace CoffeeHouse9_14.ClassHelper
     public class EFClass
     {
         public static Entities context { get;} = new Entities();
+        public static decimal finalcost;
         
     }
 }

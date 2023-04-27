@@ -1,0 +1,90 @@
+﻿<Window x:Class="CoffeeHouse9_14.Windows.ReportSaleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeeHouse9_14.Windows"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Продажи"
+                   HorizontalAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"/>
+
+        <DataGrid x:Name="dgSale" Grid.Row="2" 
+                  ItemsSource="{Binding View}"
+                  AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Sale.Id}" Header="Код заказа" Width="50"/>
+                <DataGridTextColumn Binding="{Binding Sale.IdEmployee}" Header="Код сотрудника" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Sale.IdClient}" Header="Код клиента " Width="80"/>
+                <DataGridTextColumn Binding="{Binding Product.Title}" Header="Продукт" Width="80"/>
+                <DataGridTextColumn Binding="{Binding Quantity}" Header="Количество" Width="90"/>
+                <DataGridTextColumn Binding="{Binding Sale.Date}" Header="Дата покупки" Width="90"/>
+                <DataGridTextColumn Binding="{Binding Product.Cost}" Header="Цена" Width="100"/>
+               </DataGrid.Columns>
+        </DataGrid>
+        <WrapPanel
+            Grid.Row="1">
+        <TextBlock
+            Text="За период"
+           
+            Height="25"
+            Width="100"
+            HorizontalAlignment="Left">
+            
+        </TextBlock>
+        <DatePicker
+            x:Name="dpFirst"
+            Height="25"
+            Width="100"
+            
+            HorizontalAlignment="Left" SelectedDateChanged="dpFirst_SelectedDateChanged">
+            
+        </DatePicker>
+            <TextBlock
+            Text="до"
+           TextAlignment="Center"
+            Height="25"
+            Width="100"
+            HorizontalAlignment="Left">
+
+            </TextBlock>
+            <DatePicker
+            x:Name="dpSecond"
+            Height="25"
+            Width="100"
+            HorizontalAlignment="Left" SelectedDateChanged="dpSecond_SelectedDateChanged">
+            
+        </DatePicker>
+            <ComboBox x:Name="cmbMonth"
+                      Width="60"
+                      Margin="10 0 0 0" SelectionChanged="cmbMonth_SelectionChanged">
+                <ComboBoxItem Content="Январь"></ComboBoxItem>
+                <ComboBoxItem Content="Февраль"></ComboBoxItem>
+                <ComboBoxItem Content="Маррт"></ComboBoxItem>
+                <ComboBoxItem Content="Апрель"></ComboBoxItem>
+                <ComboBoxItem Content="Май"></ComboBoxItem>
+                <ComboBoxItem Content="Июнь"></ComboBoxItem>
+                <ComboBoxItem Content="Июль"></ComboBoxItem>
+                <ComboBoxItem Content="Август"></ComboBoxItem>
+                <ComboBoxItem Content="Сентаябрь"></ComboBoxItem>
+                <ComboBoxItem Content="Октябрь"></ComboBoxItem>
+                <ComboBoxItem Content="Ноябрь"></ComboBoxItem>
+                <ComboBoxItem Content="Декабрь"></ComboBoxItem>
+                
+            </ComboBox>
+            <ComboBox x:Name="cmbYear"
+                      Width="60"
+                      Margin="10 0 0 0" SelectionChanged="cmbYear_SelectionChanged" />
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -87,6 +87,7 @@ namespace CoffeeHouse9_14.Windows
                 Stuffs.Insert(o, selectedProduct);
             }
             GetListProduct();
+            
         }
 
         private void Pokupka_Click(object sender, RoutedEventArgs e)
