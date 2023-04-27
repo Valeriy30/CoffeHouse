@@ -41,3 +41,5 @@ C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditClientWind
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\AddEditClientWindow.baml
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\CartWindow.g.cs
 C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\CartWindow.baml
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ReportWindow.g.cs
+C:\Users\IMac10\source\repos\CoffeeHouse9-14\obj\Debug\Windows\ReportWindow.baml

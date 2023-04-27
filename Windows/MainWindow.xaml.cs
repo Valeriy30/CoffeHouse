@@ -52,5 +52,13 @@ namespace CoffeeHouse9_14
             accountList.ShowDialog();
             this.Show();
         }
+
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow(); 
+            this.Hide();
+            reportWindow.ShowDialog();
+            this.Show();
+        }
     }
 }
