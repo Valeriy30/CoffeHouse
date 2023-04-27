@@ -44,7 +44,8 @@
 <b1> Добавление и изменение сотрудника </b>
 ![image](https://user-images.githubusercontent.com/116799841/231772113-15b9e65c-e062-4cb4-be9d-2217bbed6081.png)
 ![image](https://user-images.githubusercontent.com/116799841/231772253-a5cfcbbf-2c00-410d-9176-d06675147d78.png)
-
+<b1> </b>
+<b1> </b>
 <b1> Оформление заказа </b>
 ![image](https://user-images.githubusercontent.com/116799841/234770944-1102a73b-4d35-40dd-83c3-287dc64dc63c.png)
 ![image](https://user-images.githubusercontent.com/116799841/234771110-48d260d4-22fa-481e-8c75-dba2b748e8dc.png)
