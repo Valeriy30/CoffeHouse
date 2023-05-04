@@ -101,11 +101,23 @@
             </ListView.ItemTemplate>
 
         </ListView>
+        <WrapPanel
+            Grid.Row="3"
+            HorizontalAlignment="Right">
+        <TextBlock 
+            Width="100"
+            x:Name="tbFinalCost"
+            HorizontalAlignment="Center"
+            FontSize="15"
+            Margin="10 0 0 0"
+            FontWeight="Bold"
+            TextAlignment="Right"
+                                 />
         <Button
             x:Name="btnPokupka_Click"
             HorizontalAlignment="Right"
             VerticalAlignment="Stretch"
-            Grid.Row="3"
+            
             Height="50"
             Width="200"
             Content="Оплатить"
@@ -115,5 +127,6 @@
             >
             
         </Button>
+        </WrapPanel>
     </Grid>
 </Window>

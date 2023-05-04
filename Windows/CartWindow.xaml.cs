@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse9_14.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
@@ -35,11 +36,30 @@ namespace CoffeeHouse9_14.Windows
         }
         private void GetListProduct()
         {
-            ObservableCollection<DB.Product> stuffs = new ObservableCollection<DB.Product>(ClassHelper.CartClass.Stuffs);
+            ObservableCollection<DB.Product> products = new ObservableCollection<DB.Product>(ClassHelper.CartClass.Stuffs);
 
-            LvCartProductList.ItemsSource = stuffs;
+            LvCartProductList.ItemsSource = products;
+            decimal finalcost = 0;
+            foreach (DB.Product product in products) 
+            { 
+               finalcost += product.Cost*product.Quantity;
+            }
+            
+            tbFinalCost.Text = DiscountThursday(Convert.ToDouble(finalcost)).ToString()+"руб.";
+           
         }
-
+        private decimal DiscountThursday(double finalcost)
+        {
+           if (DateTime.Now.Day>=22&&DateTime.Now.Day<=28) 
+            { 
+                
+                if(DateTime.Now.DayOfWeek== DayOfWeek.Thursday) 
+                {
+                    finalcost = finalcost-finalcost*0.04;
+                }
+            }
+            return Convert.ToDecimal(finalcost);
+        }
         private void BtnRemoveToCart_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
