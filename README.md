@@ -52,6 +52,8 @@
 ![image](https://user-images.githubusercontent.com/116799841/234771326-c923f397-684a-4e1f-bf7b-72f839a84dd3.png)
 ![image](https://user-images.githubusercontent.com/116799841/234771393-0455ca9e-a109-4da2-a427-c58d5d3927dd.png)
 
-
+<b1> Сортировка отчетов продаж </b>
+![image](https://user-images.githubusercontent.com/116799841/234873850-63efab3c-76b0-48c4-9c3c-75919b0c3a2c.png)
+![image](https://user-images.githubusercontent.com/116799841/234873953-b6a3e318-91d6-4652-bc58-7586397ffe6e.png)
 
 
