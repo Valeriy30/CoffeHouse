@@ -45,20 +45,24 @@ namespace CoffeeHouse9_14.Windows
                finalcost += product.Cost*product.Quantity;
             }
             
-            tbFinalCost.Text = DiscountThursday(Convert.ToDouble(finalcost)).ToString()+"руб.";
+            tbFinalCost.Text = DiscountThursday(finalcost.ToString())+" руб.";
            
         }
-        private decimal DiscountThursday(double finalcost)
+        public static decimal DiscountThursday(string finalcost)
+
         {
-           if (DateTime.Now.Day>=22&&DateTime.Now.Day<=28) 
-            { 
-                
-                if(DateTime.Now.DayOfWeek== DayOfWeek.Thursday) 
-                {
-                    finalcost = finalcost-finalcost*0.04;
-                }
-            }
-            return Convert.ToDecimal(finalcost);
+            Double.TryParse(finalcost, out double final);
+
+          if (DateTime.Now.Day >= 22 && DateTime.Now.Day <= 28 && DateTime.Now.DayOfWeek == DayOfWeek.Thursday)
+          {
+
+              final = final - final * 0.04;
+
+          }
+          return Convert.ToDecimal(final);
+          
+          
+            
         }
         private void BtnRemoveToCart_Click(object sender, RoutedEventArgs e)
         {
